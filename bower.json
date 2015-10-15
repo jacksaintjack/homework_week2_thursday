@@ -1,0 +1,20 @@
+{
+  "name": "thurday",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jacksaintjack/homework_week2_thursday",
+  "authors": [
+    "Nicholas Glover <jacksaintjack@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "neat": "~1.7.2",
+    "normalize-css": "normalize.css#~3.0.3"
+  }
+}
