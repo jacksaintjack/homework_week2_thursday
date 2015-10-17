@@ -2,13 +2,28 @@
 $visual-grid: true;
 @import'../bower_components/neat/app/assets/stylesheets/_neat.scss';
 
-html {
+@mixin shadow{
+  box-shadow: 0 4px 0 rgba(128, 128, 128, 0.75);
+}
+
+
+body {
   background: url(../images/bg.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-repeat: no-repeat;
 }
+
+body::before {
+  margin:0;
+  background: rgba(39, 36, 36, 0.89);
+  background-size:contain;
+  z-index:-1;
+  padding:50%;
+}
+
     .wrapper{
       @include outer-container(55%);
     }
@@ -61,19 +76,24 @@ html {
 
         .facebook{
           background:#445897;
-          padding: 3% 0% 0 5%;
+          padding: 3% 0% 0 6%;
+          @include shadow;
+
         }
         .rss{
           background:#CC8F32;
           padding: 3% 0% 0 5%;
+          @include shadow;
         }
         .twitter{
           background:#6A8DC7;
           padding: 3% 0% 0 4%;
+          @include shadow;
         }
         .youtube{
           background:#AE382A;
           padding: 3% 0% 0 4%;
+          @include shadow;
         }
       }
 
@@ -89,6 +109,7 @@ html {
       color:white;
       background:#B4272D;
       margin-bottom:1em;
+      @include shadow;
       @include span-columns(3);
     }
 
@@ -97,7 +118,7 @@ html {
       margin:0;
       height:19em;
       background:white;
-      margin-bottom:2%;
+      @include shadow;
       @include span-columns(12);
 
       .headerPhoto{
@@ -122,39 +143,74 @@ html {
         background-size:contain;
         height: 12em;
         width: 25em;
-        bottom: 14em;
-        position: absolute;
-        left: 25.1%;
+        bottom: 15em;
+        position: relative;
+        left: 2em;
       }
     }
 
     .circleNav{
-      color:white;
-      @include span-columns(12);
+      padding:1.5em 0 1.5em 0;
+      @include span-columns(10);
       @include shift(5.5);
 
-    div{
-      text-align:center;
-      display: inline-block;
-      width: 2.1%;
-      height: 2.1%;
-      border-radius: 1em;
-      background: white;
-      margin-right: 0.5%;
-      position:relative;
-    }
-
-      .circleSelec{
-        position:relative;
-        color:red;
-        font-size:0.1em;
-        opacity:0;
+      input{
+        background:white;
       }
 
-      div:hover{
-      .circleSelec{
-        opacity:1;
-        position:relative;
+      input[type="radio"]:checked::before {
+        content: "";
+        display: block;
+        position: relative;
+        text-align: center;
+        width: 0.5em;
+        height: 0.5em;
+        border-radius: 50%;
+        background: red;
+        top: 28%;
+        left: 23.5%;
+
+        input{
+        }
+        }
+    }
+
+
+    main{
+      @include outer-container;
+
+      article{
+        @include span-columns(12);
+        margin-right:0;
+
+      section{
+        padding: 0 2%;
+        background:white;
+        @include shadow;
+        @include span-columns(4);
+
+      h6{
+        color:#838383;
+        line-height: 2em;
+      }
+
+      h5{
+        color:#C7C7C7;
+      }
+
+      h4{
+        text-align: center;
+        color: #AF262D;
+        font-size: 0.75em;
+      }
+      .skateProfile{
+        @include span-columns(12);
+      }
+
+      }
       }
     }
+
+    article section:nth-child(3){
+      margin-right:0;
     }

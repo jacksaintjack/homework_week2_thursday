@@ -25,12 +25,20 @@ body:before {
   width: 100%;
   z-index: -1; }
 
-html {
+body {
   background: url(../images/bg.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+body::before {
+  margin: 0;
+  background: rgba(39, 36, 36, 0.89);
+  background-size: contain;
+  z-index: -1;
+  padding: 50%; }
 
 .wrapper {
   max-width: 55%;
@@ -87,16 +95,20 @@ html {
       margin-left: 0.3em; }
     .mediaButtons .mediaButtonArea .facebook {
       background: #445897;
-      padding: 3% 0% 0 5%; }
+      padding: 3% 0% 0 6%;
+      box-shadow: 0 4px 0 rgba(128, 128, 128, 0.75); }
     .mediaButtons .mediaButtonArea .rss {
       background: #CC8F32;
-      padding: 3% 0% 0 5%; }
+      padding: 3% 0% 0 5%;
+      box-shadow: 0 4px 0 rgba(128, 128, 128, 0.75); }
     .mediaButtons .mediaButtonArea .twitter {
       background: #6A8DC7;
-      padding: 3% 0% 0 4%; }
+      padding: 3% 0% 0 4%;
+      box-shadow: 0 4px 0 rgba(128, 128, 128, 0.75); }
     .mediaButtons .mediaButtonArea .youtube {
       background: #AE382A;
-      padding: 3% 0% 0 4%; }
+      padding: 3% 0% 0 4%;
+      box-shadow: 0 4px 0 rgba(128, 128, 128, 0.75); }
 
 nav {
   margin: 0;
@@ -113,6 +125,7 @@ button {
   color: white;
   background: #B4272D;
   margin-bottom: 1em;
+  box-shadow: 0 4px 0 rgba(128, 128, 128, 0.75);
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -125,7 +138,7 @@ button {
   margin: 0;
   height: 19em;
   background: white;
-  margin-bottom: 2%;
+  box-shadow: 0 4px 0 rgba(128, 128, 128, 0.75);
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -151,33 +164,75 @@ button {
     background-size: contain;
     height: 12em;
     width: 25em;
-    bottom: 14em;
-    position: absolute;
-    left: 25.1%; }
+    bottom: 15em;
+    position: relative;
+    left: 2em; }
 
 .circleNav {
-  color: white;
+  padding: 1.5em 0 1.5em 0;
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%;
+  width: 82.94039%;
   margin-left: 46.91392%; }
   .circleNav:last-child {
     margin-right: 0; }
-  .circleNav div {
-    text-align: center;
-    display: inline-block;
-    width: 2.1%;
-    height: 2.1%;
-    border-radius: 1em;
-    background: white;
-    margin-right: 0.5%;
-    position: relative; }
-  .circleNav .circleSelec {
+  .circleNav input {
+    background: white; }
+  .circleNav input[type="radio"]:checked::before {
+    content: "";
+    display: block;
     position: relative;
-    color: red;
-    font-size: 0.1em;
-    opacity: 0; }
-  .circleNav div:hover .circleSelec {
-    opacity: 1;
-    position: relative; }
+    text-align: center;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background: red;
+    top: 28%;
+    left: 23.5%; }
+
+main {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  main::after {
+    clear: both;
+    content: "";
+    display: table; }
+  main article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%;
+    margin-right: 0; }
+    main article:last-child {
+      margin-right: 0; }
+    main article section {
+      padding: 0 2%;
+      background: white;
+      box-shadow: 0 4px 0 rgba(128, 128, 128, 0.75);
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      main article section:last-child {
+        margin-right: 0; }
+      main article section h6 {
+        color: #838383;
+        line-height: 2em; }
+      main article section h5 {
+        color: #C7C7C7; }
+      main article section h4 {
+        text-align: center;
+        color: #AF262D;
+        font-size: 0.75em; }
+      main article section .skateProfile {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        main article section .skateProfile:last-child {
+          margin-right: 0; }
+
+article section:nth-child(3) {
+  margin-right: 0; }
