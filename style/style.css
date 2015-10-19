@@ -225,10 +225,10 @@ article section:nth-child(3) {
     background-position: -8em 0em;
     background-repeat: no-repeat;
     height: 12em;
-    color: white;
-    text-align: center;
+    color: gray;
     padding-top: 4%;
     font-size: 1.1em;
+    text-align: center;
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -236,18 +236,19 @@ article section:nth-child(3) {
     margin-bottom: 1em;
     border: 4px solid white;
     box-shadow: 0 4px 0 rgba(128, 128, 128, 0.75);
-    transition: background-size 1.5s, background-position 1.5s; }
+    transition: background-size 1.5s, background-position 1.5s, color 1.5s; }
     .skateProfile div:nth-child(1):last-child {
       margin-right: 0; }
     .skateProfile div:nth-child(1):hover {
       background-size: 18em 12em;
-      background-position: 0em 0em; }
+      background-position: 0em 0em;
+      color: white; }
   .skateProfile div:nth-child(2) {
     background-image: url(../images/sk8er-3.png);
     background-size: 25em 13em;
     background-repeat: no-repeat;
     height: 12em;
-    color: white;
+    color: gray;
     text-align: center;
     padding-top: 4%;
     font-size: 1.1em;
@@ -257,17 +258,18 @@ article section:nth-child(3) {
     width: 31.76157%;
     border: 4px solid white;
     box-shadow: 0 4px 0 rgba(128, 128, 128, 0.75);
-    transition: background-size 1.5s; }
+    transition: background-size 1.5s, color 1.5s; }
     .skateProfile div:nth-child(2):last-child {
       margin-right: 0; }
     .skateProfile div:nth-child(2):hover {
-      background-size: 18em 12em; }
+      background-size: 18em 12em;
+      color: white; }
   .skateProfile div:nth-child(3) {
     background-image: url(../images/sk8er-2.png);
     background-size: 35em 25em;
     background-position: -15em 0em;
     background-repeat: no-repeat;
-    color: white;
+    color: gray;
     text-align: center;
     padding-top: 15%;
     font-size: 1.1em;
@@ -280,19 +282,20 @@ article section:nth-child(3) {
     height: 25em;
     border: 4px solid white;
     box-shadow: 0 4px 0 rgba(128, 128, 128, 0.75);
-    transition: background-size 1.5s, background-position 1.5s; }
+    transition: background-size 1.5s, background-position 1.5s, color 1.5s; }
     .skateProfile div:nth-child(3):last-child {
       margin-right: 0; }
     .skateProfile div:nth-child(3):hover {
       background-size: 29em 25em;
-      background-position: -10em 0em; }
+      background-position: -10em 0em;
+      color: white; }
   .skateProfile div:nth-child(4) {
     background-image: url(../images/sk8er-1.png);
     background-size: 42em 18.5em;
     background-position: 0em -4.5em;
     background-repeat: no-repeat;
     height: 12em;
-    color: white;
+    color: gray;
     text-align: center;
     padding-top: 6%;
     font-size: 1.1em;
@@ -303,12 +306,13 @@ article section:nth-child(3) {
     margin: 0 0 2% 0;
     border: 4px solid white;
     box-shadow: 0 4px 0 rgba(128, 128, 128, 0.75);
-    transition: background-size 1.5s, background-position 1.5s; }
+    transition: background-size 1.5s, background-position 1.5s, color 1.5s; }
     .skateProfile div:nth-child(4):last-child {
       margin-right: 0; }
     .skateProfile div:nth-child(4):hover {
       background-size: 42em 12.5em;
-      background-position: 0em 0em; }
+      background-position: 0em 0em;
+      color: white; }
 
 .skateSign {
   position: absolute;
@@ -519,7 +523,7 @@ footer {
   .skateSign {
     display: none; } }
 
-@media (min-width: 0px) and (max-width: 900px) {
+@media (min-width: 581px) and (max-width: 900px) {
   .wrapper {
     max-width: 100%;
     margin-left: auto;
@@ -596,7 +600,7 @@ footer {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 74.41059%;
+      width: 82.94039%;
       margin-left: 17.05961%;
       font-size: 1.5em;
       margin-bottom: 1%; }
@@ -606,7 +610,7 @@ footer {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 74.41059%;
+      width: 82.94039%;
       margin-left: 17.05961%;
       font-size: 1.0em;
       margin-top: 1%; }
@@ -616,7 +620,7 @@ footer {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 74.41059%;
+      width: 82.94039%;
       margin-left: 17.05961%;
       font-size: 0.9em; }
       main article section h5:last-child {
@@ -625,7 +629,7 @@ footer {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 31.76157%;
+      width: 40.29137%;
       margin-left: 34.11922%;
       margin-top: 0.5%;
       font-size: 1.1em; }
@@ -644,11 +648,11 @@ footer {
       margin-right: 0; }
     .skateProfile div:nth-child(1) {
       font-size: 1.0em;
-      background-size: 10em 13em;
+      background-size: 18em 13em;
       background-position: 0em 0em;
       transition: background-size 1.5s; }
       .skateProfile div:nth-child(1):hover {
-        background-size: 10em 12em; }
+        background-size: 17em 12em; }
     .skateProfile div:nth-child(2) {
       font-size: 1.0em;
       background-size: 18em 13em;
@@ -662,7 +666,7 @@ footer {
       font-size: 1.0em;
       background-size: 31em 26em;
       background-position: -13em 0em;
-      transition: background-size 1.5s, background-psotion 1.5s; }
+      transition: background-size 1.5s, background-position 1.5s; }
       .skateProfile div:nth-child(3):hover {
         background-size: 28em 26em;
         background-position: -13em 0em; }
@@ -706,6 +710,265 @@ footer {
     transition: border 0.5, border-radius 0.5, padding 0.5s; }
     .skateboards .skateboardBottom:last-child {
       margin-right: 0; }
+  .columnOne {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    line-height: 119%;
+    padding-left: 3%; }
+    .columnOne:last-child {
+      margin-right: 0; }
+    .columnOne h5 {
+      color: #828282; }
+  .smallMedia div:nth-child(1) {
+    width: 3em;
+    height: 3em;
+    padding-top: 3%; }
+    .smallMedia div:nth-child(1) i {
+      font-size: 2em; }
+  .smallMedia div:nth-child(2) {
+    width: 3em;
+    height: 3em;
+    padding-top: 3%; }
+    .smallMedia div:nth-child(2) i {
+      font-size: 2em; }
+  .smallMedia div:nth-child(3) {
+    width: 3em;
+    height: 3em;
+    padding-top: 3%; }
+    .smallMedia div:nth-child(3) i {
+      font-size: 2em; }
+  .smallMedia div:nth-child(4) {
+    width: 3em;
+    height: 3em;
+    padding-top: 3%; }
+    .smallMedia div:nth-child(4) i {
+      font-size: 2em; }
+  .columnTwo {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    padding: 1.5% 4% 0 0; }
+    .columnTwo:last-child {
+      margin-right: 0; }
+    .columnTwo input:nth-child(1) {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-bottom: 2%;
+      border-top: 3px solid #B2B2B2;
+      border-left: 3px solid #B2B2B2; }
+      .columnTwo input:nth-child(1):last-child {
+        margin-right: 0; }
+    .columnTwo input:nth-child(2) {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      margin-bottom: 2%;
+      border-top: 3px solid #B2B2B2;
+      border-left: 3px solid #B2B2B2; }
+      .columnTwo input:nth-child(2):last-child {
+        margin-right: 0; }
+    .columnTwo textarea {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .columnTwo textarea:last-child {
+        margin-right: 0; } }
+
+@media (min-width: 0px) and (max-width: 580px) {
+  .wrapper {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2% 0 2% 0; }
+    .wrapper::after {
+      clear: both;
+      content: "";
+      display: table; }
+  .mediaButtons span {
+    display: none; }
+    .mediaButtons span p {
+      display: none; }
+  .mediaButtons .dots {
+    display: none; }
+  .mediaButtons .mediaButtonArea {
+    width: 2em;
+    height: 2em;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 91.4702%; }
+    .mediaButtons .mediaButtonArea:last-child {
+      margin-right: 0; }
+    .mediaButtons .mediaButtonArea div {
+      height: 2.5em;
+      width: 3em;
+      margin-left: 0.5em;
+      font-size: 2em; }
+    .mediaButtons .mediaButtonArea .facebook {
+      padding: 2% 0% 0 6%; }
+    .mediaButtons .mediaButtonArea .rss {
+      padding: 2% 0% 0 5%; }
+    .mediaButtons .mediaButtonArea .twitter {
+      padding: 2% 0% 0 4%; }
+    .mediaButtons .mediaButtonArea .youtube {
+      padding: 1.5% 0% 0 4%; }
+  nav {
+    padding-top: 15%; }
+  button {
+    height: 3em;
+    box-shadow: 0 4px 0 rgba(128, 128, 128, 0.75);
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 91.4702%;
+    margin-left: 4.2649%; }
+    button:last-child {
+      margin-right: 0; }
+  .headerMain .headerPhoto {
+    background-image: url(../images/top-image.png);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 31em;
+    background-position: 0em -1em; }
+  .headerMain .headerLogo {
+    height: 10em;
+    width: 15em;
+    bottom: 13em;
+    left: 1em; }
+  .circleNav {
+    display: none; }
+  main article section {
+    margin-top: 4%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    main article section:last-child {
+      margin-right: 0; }
+    main article section h3 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 91.4702%;
+      margin-left: 8.5298%;
+      font-size: 1.5em;
+      margin-bottom: 1%; }
+      main article section h3:last-child {
+        margin-right: 0; }
+    main article section h6 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 91.4702%;
+      margin-left: 8.5298%;
+      font-size: 1.0em;
+      margin-top: 1%; }
+      main article section h6:last-child {
+        margin-right: 0; }
+    main article section h5 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 91.4702%;
+      margin-left: 8.5298%;
+      font-size: 0.9em; }
+      main article section h5:last-child {
+        margin-right: 0; }
+    main article section h4 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%;
+      margin-left: 34.11922%;
+      margin-top: 0.5%;
+      font-size: 1.1em; }
+      main article section h4:last-child {
+        margin-right: 0; }
+  article section:nth-child(3) {
+    margin-right: 0; }
+  nav {
+    padding-top: 5%; }
+  .skateProfile {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    .skateProfile:last-child {
+      margin-right: 0; }
+    .skateProfile div:nth-child(1) {
+      font-size: 0.7em;
+      background-size: 13em 13em;
+      background-position: 0em 0em;
+      transition: background-size 1.5s; }
+      .skateProfile div:nth-child(1):hover {
+        background-size: 12em 12em; }
+    .skateProfile div:nth-child(2) {
+      font-size: 0.7em;
+      background-size: 18em 13em;
+      background-position: 0em 0em;
+      transition: background-size 1.5s; }
+      .skateProfile div:nth-child(2):hover {
+        background-size: 15em 12em; }
+    .skateProfile div:nth-child(3) {
+      padding-top: 22%;
+      height: 31.7em;
+      font-size: 0.7em;
+      background-size: 32em 33em;
+      background-position: -13em 0em;
+      transition: background-size 1.5s, background-position 1.5s; }
+      .skateProfile div:nth-child(3):hover {
+        background-size: 31em 32em;
+        background-position: -13em 0em; }
+  .skateSign {
+    position: absolute;
+    left: 4%;
+    top: 98%;
+    transition: hover 1s; }
+    .skateSign:hover {
+      left: 5%; }
+    .skateSign div:nth-child(1) {
+      background: #B4292E;
+      width: 11em;
+      height: 4.8em;
+      float: left;
+      color: white;
+      font-size: 1.3em;
+      padding: 14% 0 0 10%; }
+    .skateSign div:nth-child(2) {
+      width: 0;
+      height: 0;
+      border-top: 3.15em solid transparent;
+      border-bottom: 3.15em solid transparent;
+      border-left: 3em solid #B4292E;
+      float: left; }
+  .skateboards {
+    padding-left: 17%; }
+    .skateboards .skateboardTop {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      width: 9em;
+      transition: border 0.5, border-radius 0.5, padding 0.5s; }
+      .skateboards .skateboardTop:last-child {
+        margin-right: 0; }
+    .skateboards .skateboardBottom {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%;
+      width: 9em;
+      transition: border 0.5, border-radius 0.5, padding 0.5s; }
+      .skateboards .skateboardBottom:last-child {
+        margin-right: 0; }
   .columnOne {
     float: left;
     display: block;

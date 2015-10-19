@@ -212,20 +212,22 @@ body::before {
         background-position: -8em 0em;
         background-repeat: no-repeat;
         height:12em;
-        color:white;
-        text-align: center;
+        color:gray;
         padding-top:4%;
         font-size:1.1em;
+        text-align: center;
         @include span-columns(4);
         margin-bottom:1em;
         border:4px solid white;
         @include shadow;
-        transition:background-size 1.5s, background-position 1.5s;
+        transition:background-size 1.5s, background-position 1.5s, color 1.5s;
 
         &:hover{
           background-size: 18em 12em;
           background-position: 0em 0em;
+          color:white;
           }
+
     }
 
       div:nth-child(2){
@@ -233,17 +235,18 @@ body::before {
         background-size: 25em 13em;
         background-repeat: no-repeat;
         height:12em;
-        color:white;
+        color:gray;
         text-align: center;
         padding-top:4%;
         font-size:1.1em;
         @include span-columns(4);
         border:4px solid white;
         @include shadow;
-        transition:background-size 1.5s;
+        transition:background-size 1.5s, color 1.5s;
 
         &:hover{
           background-size: 18em 12em;
+          color:white;
           }
     }
 
@@ -252,7 +255,7 @@ body::before {
         background-size: 35em 25em;
         background-position: -15em 0em;
         background-repeat: no-repeat;
-        color:white;
+        color:gray;
         text-align: center;
         padding-top:15%;
         font-size:1.1em;
@@ -262,11 +265,12 @@ body::before {
         height:25em;
         border:4px solid white;
         @include shadow;
-        transition:background-size 1.5s, background-position 1.5s;
+        transition:background-size 1.5s, background-position 1.5s, color 1.5s;
 
         &:hover{
           background-size: 29em 25em;
           background-position: -10em 0em;
+          color:white
           }
         }
 
@@ -276,7 +280,7 @@ body::before {
         background-position: 0em -4.5em;
         background-repeat: no-repeat;
         height:12em;
-        color:white;
+        color:gray;
         text-align: center;
         padding-top:6%;
         font-size:1.1em;
@@ -284,12 +288,13 @@ body::before {
         margin:0 0 2% 0;
         border:4px solid white;
         @include shadow;
-        transition:background-size 1.5s, background-position 1.5s;
+        transition:background-size 1.5s, background-position 1.5s, color 1.5s;
 
         &:hover{
           background-size: 42em 12.5em;
           background-position: 0em 0em;
-            }
+          color:white;
+          }
     }
 }
 
