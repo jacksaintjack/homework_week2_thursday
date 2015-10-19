@@ -1,0 +1,344 @@
+@media (min-width:1481px) and (max-width:1620px){
+    .wrapper{
+      @include outer-container(60%);
+    }
+    .skateSign{
+      left:0;
+    }
+  }
+
+@media (min-width:1321px) and (max-width:1480px){
+  .wrapper{
+    @include outer-container(70%);
+  }
+  .skateSign{
+    left:0;
+
+    div:nth-child(1){
+      width:9em;
+      height:6.3em;
+      font-size:1em;
+      padding: 22% 0 0 0%;
+    }
+  }
+}
+
+@media (min-width:1101px) and (max-width:1320px){
+  .wrapper{
+    @include outer-container(80%);
+  }
+  .skateSign{
+    display:none;
+  }
+}
+
+@media (min-width:0px) and (max-width:1100px){
+  .wrapper{
+    @include outer-container(99%);
+  }
+  .skateSign{
+    display:none;
+  }
+}
+
+@media (min-width:0px) and (max-width:900px){
+
+  .wrapper{
+    @include outer-container(100%);
+    padding:2% 0 2% 0;
+  }
+  .mediaButtons{
+
+    span{
+      display:none;
+
+      p{
+        display:none;
+      }
+    }
+
+    .dots{
+      display:none;
+      }
+
+    .mediaButtonArea{
+      width:2em;
+      height:2em;
+      @include span-columns(11);
+
+      div{
+        height: 2.5em;
+        width: 3em;
+        margin-left:0.5em;
+        font-size:2em;
+      }
+
+      .facebook{
+        padding: 2% 0% 0 6%;
+      }
+
+      .rss{
+        padding: 2% 0% 0 5%;
+      }
+
+      .twitter{
+        padding: 2% 0% 0 4%;
+
+      }
+
+      .youtube{
+        padding: 1.5% 0% 0 4%;
+      }
+    }
+  }
+
+  nav{
+    padding-top:15%;
+  }
+
+  button{
+    height: 3em;
+    @include shadow;
+    @include span-columns(11);
+    @include shift(0.5);
+  }
+
+  .headerMain{
+
+
+    .headerPhoto{
+      background-image: url(../images/top-image.png);
+      height:100%;
+      width:100%;
+      background-repeat: no-repeat;
+      background-size: 100% 31em;
+      background-position: 0em -1em;
+    }
+
+    .headerLogo{
+      height: 10em;
+      width: 15em;
+      bottom: 13em;
+      left: 1em;
+    }
+  }
+
+  .circleNav{
+    display:none;
+
+  }
+
+
+  main{
+
+    article{
+
+    section{
+      margin-top:4%;
+      @include span-columns(10);
+      @include shift(1);
+
+    h3{
+      @include span-columns(9);
+      @include shift(2);
+      font-size: 1.5em;
+      margin-bottom:1%;
+    }
+    h6{
+      @include span-columns(9);
+      @include shift(2);
+      font-size: 1.0em;
+      margin-top:1%;
+    }
+
+    h5{
+      @include span-columns(9);
+      @include shift(2);
+      font-size: 0.9em;
+    }
+
+    h4{
+      @include span-columns(4);
+      @include shift(4);
+      margin-top:0.5%;
+      font-size: 1.1em;
+      }
+    }
+  }
+}
+
+  article section:nth-child(3){
+    margin-right:0;
+  }
+
+
+
+//Skater profile section
+  nav{
+    padding-top:5%;
+  }
+  .skateProfile{
+    @include span-columns(12);
+
+     div:nth-child(1){
+     font-size:1.0em;
+     background-size: 10em 13em;
+     background-position: 0em 0em;
+     transition:background-size 1.5s;
+
+        &:hover{
+          background-size: 10em 12em;
+          }
+  }
+
+    div:nth-child(2){
+      font-size:1.0em;
+      background-size: 18em 13em;
+      background-position: 0em 0em;
+      transition:background-size 1.5s;
+
+      &:hover{
+        background-size: 15em 12em;
+        }
+  }
+
+    div:nth-child(3){
+      padding-top:22%;
+      height:26.3em;
+      font-size:1.0em;
+      background-size: 31em 26em;
+      background-position: -13em 0em;
+      transition:background-size 1.5s, background-psotion 1.5s;
+
+      &:hover{
+        background-size: 28em 26em;
+        background-position: -13em 0em;
+        }
+  }
+}
+
+//Side Arrow
+.skateSign{
+position: absolute;
+left: 4%;
+top: 98%;
+transition: hover 1s;
+
+&:hover{
+  left:5%;
+}
+
+div:nth-child(1){
+  background:#B4292E;
+  width:11em;
+  height:4.8em;
+  float:left;
+  color:white;
+  font-size:1.3em;
+  padding: 14% 0 0 10%;
+}
+
+div:nth-child(2){
+  width: 0;
+  height: 0;
+  border-top: 3.15em solid transparent;
+  border-bottom: 3.15em solid transparent;
+  border-left: 3em solid #B4292E;;
+  float:left;
+}
+}
+
+//Skateboard Selection
+.skateboards{
+
+  .skateboardTop{
+    @include span-columns(12);
+    width:6.1em;
+    transition: border 0.5, border-radius 0.5, padding 0.5s;
+    }
+
+  .skateboardBottom{
+    @include span-columns(12);
+    width:6.1em;
+    transition: border 0.5, border-radius 0.5, padding 0.5s;
+    }
+}
+
+//Footer
+
+.columnOne{
+  @include span-columns(6);
+  line-height: 119%;
+  padding-left:3%;
+  h5{
+    color:#828282;
+  }
+}
+
+.smallMedia{
+
+  div:nth-child(1){
+    width:3em;
+    height:3em;
+    padding-top:3%;
+
+    i{
+      font-size:2em;
+    }
+  }
+
+  div:nth-child(2){
+    width:3em;
+    height:3em;
+    padding-top:3%;
+
+    i{
+      font-size:2em;
+    }
+  }
+
+  div:nth-child(3){
+    width:3em;
+    height:3em;
+    padding-top:3%;
+
+    i{
+      font-size:2em;
+    }
+  }
+
+  div:nth-child(4){
+    width:3em;
+    height:3em;
+    padding-top:3%;
+
+    i{
+      font-size:2em;
+    }
+  }
+}
+
+.columnTwo{
+  @include span-columns(6);
+  padding:1.5% 4% 0 0;
+
+  input:nth-child(1){
+    @include span-columns(12);
+    margin-bottom:2%;
+    border-top:3px solid #B2B2B2;
+    border-left:3px solid #B2B2B2;
+  }
+
+  input:nth-child(2){
+    @include span-columns(12);
+    margin-bottom:2%;
+    border-top:3px solid #B2B2B2;
+    border-left:3px solid #B2B2B2;
+  }
+  textarea{
+    @include span-columns(12);
+  }
+
+}
+
+}
