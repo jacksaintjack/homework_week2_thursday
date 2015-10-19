@@ -820,7 +820,7 @@ footer {
     .mediaButtons .mediaButtonArea .youtube {
       padding: 1.5% 0% 0 4%; }
   nav {
-    padding-top: 15%; }
+    padding-top: 25%; }
   button {
     height: 3em;
     box-shadow: 0 4px 0 rgba(128, 128, 128, 0.75);
@@ -894,8 +894,6 @@ footer {
         margin-right: 0; }
   article section:nth-child(3) {
     margin-right: 0; }
-  nav {
-    padding-top: 5%; }
   .skateProfile {
     float: left;
     display: block;

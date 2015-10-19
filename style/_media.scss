@@ -394,7 +394,7 @@ div:nth-child(2){
   }
 
   nav{
-    padding-top:15%;
+    padding-top:25%;
   }
 
   button{
@@ -474,9 +474,7 @@ div:nth-child(2){
 
 
 //Skater profile section
-  nav{
-    padding-top:5%;
-  }
+
   .skateProfile{
     @include span-columns(12);
 
