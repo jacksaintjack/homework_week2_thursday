@@ -562,17 +562,17 @@ footer {
     .mediaButtons .mediaButtonArea .youtube {
       padding: 1.5% 0% 0 4%; }
   nav {
-    padding-top: 15%; }
-  button {
-    height: 3em;
-    box-shadow: 0 4px 0 rgba(128, 128, 128, 0.75);
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 91.4702%;
-    margin-left: 4.2649%; }
-    button:last-child {
-      margin-right: 0; }
+    margin-top: 5%; }
+    nav button {
+      height: 3em;
+      box-shadow: 0 4px 0 rgba(128, 128, 128, 0.75);
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 91.4702%;
+      margin-left: 4.2649%; }
+      nav button:last-child {
+        margin-right: 0; }
   .headerMain .headerPhoto {
     background-image: url(../images/top-image.png);
     height: 100%;
@@ -779,9 +779,11 @@ footer {
       margin-right: 2.35765%;
       width: 100%; }
       .columnTwo textarea:last-child {
-        margin-right: 0; } }
+        margin-right: 0; }
+  .skaterNav {
+    margin-top: 5%; } }
 
-@media (min-width: 0px) and (max-width: 580px) {
+@media (min-width: 1px) and (max-width: 580px) {
   .wrapper {
     max-width: 100%;
     margin-left: auto;
@@ -803,24 +805,28 @@ footer {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 91.4702%; }
+    width: 48.82117%;
+    margin-left: 29.85432%; }
     .mediaButtons .mediaButtonArea:last-child {
       margin-right: 0; }
     .mediaButtons .mediaButtonArea div {
+      float: none;
       height: 2.5em;
       width: 3em;
       margin-left: 0.5em;
       font-size: 2em; }
     .mediaButtons .mediaButtonArea .facebook {
+      margin-top: 4%;
       padding: 2% 0% 0 6%; }
     .mediaButtons .mediaButtonArea .rss {
+      margin-top: 4%;
       padding: 2% 0% 0 5%; }
     .mediaButtons .mediaButtonArea .twitter {
       padding: 2% 0% 0 4%; }
     .mediaButtons .mediaButtonArea .youtube {
       padding: 1.5% 0% 0 4%; }
   nav {
-    padding-top: 25%; }
+    margin-top: 30%; }
   button {
     height: 3em;
     box-shadow: 0 4px 0 rgba(128, 128, 128, 0.75);
@@ -1036,4 +1042,165 @@ footer {
       margin-right: 2.35765%;
       width: 100%; }
       .columnTwo textarea:last-child {
-        margin-right: 0; } }
+        margin-right: 0; }
+  .skaterNav {
+    margin-top: 5%; } }
+
+@media (min-width: 1px) and (max-width: 510px) {
+  .mediaButtons .mediaButtonArea {
+    width: 2em;
+    height: 2em;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
+    margin-left: 25.58941%; }
+    .mediaButtons .mediaButtonArea:last-child {
+      margin-right: 0; }
+  nav {
+    margin-top: 35%; } }
+
+@media (min-width: 1px) and (max-width: 440px) {
+  .mediaButtons .mediaButtonArea {
+    width: 2em;
+    height: 2em;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 82.94039%;
+    margin-left: 15.35365%; }
+    .mediaButtons .mediaButtonArea:last-child {
+      margin-right: 0; }
+  nav {
+    margin-top: 45%; }
+  .headerMain .headerPhoto {
+    background-image: url(../images/top-image.png);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 31em;
+    background-position: 0em -1em; }
+  .headerMain .headerLogo {
+    height: 7em;
+    position: absolute;
+    width: 10em;
+    top: 41em;
+    left: 1em; }
+  main article section {
+    margin-top: 4%;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    main article section:last-child {
+      margin-right: 0; }
+    main article section h3 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 91.4702%;
+      margin-left: 8.5298%;
+      font-size: 1.5em;
+      margin-bottom: 1%; }
+      main article section h3:last-child {
+        margin-right: 0; }
+    main article section h6 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 91.4702%;
+      margin-left: 8.5298%;
+      font-size: 0.8em;
+      margin-top: 1%; }
+      main article section h6:last-child {
+        margin-right: 0; }
+    main article section h5 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 91.4702%;
+      margin-left: 8.5298%;
+      font-size: 0.9em; }
+      main article section h5:last-child {
+        margin-right: 0; }
+    main article section h4 {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%;
+      margin-left: 34.11922%;
+      margin-top: 0.5%;
+      font-size: 1.1em; }
+      main article section h4:last-child {
+        margin-right: 0; }
+  .skaterNav {
+    margin-top: 5%; }
+    .skaterNav .skateProfile {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .skaterNav .skateProfile:last-child {
+        margin-right: 0; }
+      .skaterNav .skateProfile div:nth-child(1) {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        font-size: 0.7em;
+        height: 20.7em;
+        background-size: 41em 25em;
+        background-position: -8em -3em;
+        transition: background-position 1.5s; }
+        .skaterNav .skateProfile div:nth-child(1):last-child {
+          margin-right: 0; }
+        .skaterNav .skateProfile div:nth-child(1):hover {
+          background-position: -10em -3em; }
+      .skaterNav .skateProfile div:nth-child(2) {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        font-size: 0.7em;
+        height: 20.7em;
+        background-size: 39em 21em;
+        background-position: 0em 0em;
+        transition: background-size 1.5s; }
+        .skaterNav .skateProfile div:nth-child(2):last-child {
+          margin-right: 0; }
+        .skaterNav .skateProfile div:nth-child(2):hover {
+          background-size: 37em 21em; }
+      .skaterNav .skateProfile div:nth-child(3) {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        padding-top: 22%;
+        height: 20.7em;
+        font-size: 0.7em;
+        background-size: 47em 31em;
+        background-position: -16em 0em;
+        transition: background-size 1.5s, background-position 1.5s; }
+        .skaterNav .skateProfile div:nth-child(3):last-child {
+          margin-right: 0; }
+        .skaterNav .skateProfile div:nth-child(3):hover {
+          background-size: 44em 31em;
+          background-position: -14em 0em; }
+      .skaterNav .skateProfile div:nth-child(4) {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        padding-top: 22%;
+        height: 20.7em;
+        font-size: 0.7em;
+        background-size: 40em 20em;
+        background-position: 0em 0em;
+        transition: background-size 1.5s, background-position 1.5s; }
+        .skaterNav .skateProfile div:nth-child(4):last-child {
+          margin-right: 0; }
+        .skaterNav .skateProfile div:nth-child(4):hover {
+          background-size: 36em 20em;
+          background-position: 0em 0em; }
+  .skateboards {
+    padding-left: 28%; } }

@@ -1,11 +1,11 @@
 @media (min-width:1481px) and (max-width:1620px){
-    .wrapper{
-      @include outer-container(60%);
-    }
-    .skateSign{
-      left:0;
-    }
+  .wrapper{
+    @include outer-container(60%);
   }
+  .skateSign{
+    left:0;
+  }
+}
 
 @media (min-width:1321px) and (max-width:1480px){
   .wrapper{
@@ -59,7 +59,7 @@
 
     .dots{
       display:none;
-      }
+    }
 
     .mediaButtonArea{
       width:2em;
@@ -93,15 +93,16 @@
   }
 
   nav{
-    padding-top:15%;
+    margin-top:5%;
+
+    button{
+      height: 3em;
+      @include shadow;
+      @include span-columns(11);
+      @include shift(0.5);
+    }
   }
 
-  button{
-    height: 3em;
-    @include shadow;
-    @include span-columns(11);
-    @include shift(0.5);
-  }
 
   .headerMain{
 
@@ -133,39 +134,39 @@
 
     article{
 
-    section{
-      margin-top:4%;
-      @include span-columns(10);
-      @include shift(1);
+      section{
+        margin-top:4%;
+        @include span-columns(10);
+        @include shift(1);
 
-    h3{
-      @include span-columns(10);
-      @include shift(2);
-      font-size: 1.5em;
-      margin-bottom:1%;
-    }
-    h6{
-      @include span-columns(10);
-      @include shift(2);
-      font-size: 1.0em;
-      margin-top:1%;
-    }
+        h3{
+          @include span-columns(10);
+          @include shift(2);
+          font-size: 1.5em;
+          margin-bottom:1%;
+        }
+        h6{
+          @include span-columns(10);
+          @include shift(2);
+          font-size: 1.0em;
+          margin-top:1%;
+        }
 
-    h5{
-      @include span-columns(10);
-      @include shift(2);
-      font-size: 0.9em;
-    }
+        h5{
+          @include span-columns(10);
+          @include shift(2);
+          font-size: 0.9em;
+        }
 
-    h4{
-      @include span-columns(5);
-      @include shift(4);
-      margin-top:0.5%;
-      font-size: 1.1em;
+        h4{
+          @include span-columns(5);
+          @include shift(4);
+          margin-top:0.5%;
+          font-size: 1.1em;
+        }
       }
     }
   }
-}
 
   article section:nth-child(3){
     margin-right:0;
@@ -173,23 +174,23 @@
 
 
 
-//Skater profile section
+  //Skater profile section
   nav{
     padding-top:5%;
   }
   .skateProfile{
     @include span-columns(12);
 
-     div:nth-child(1){
-     font-size:1.0em;
-     background-size: 18em 13em;
-     background-position: 0em 0em;
-     transition:background-size 1.5s;
+    div:nth-child(1){
+      font-size:1.0em;
+      background-size: 18em 13em;
+      background-position: 0em 0em;
+      transition:background-size 1.5s;
 
-        &:hover{
-          background-size: 17em 12em;
-          }
-  }
+      &:hover{
+        background-size: 17em 12em;
+      }
+    }
 
     div:nth-child(2){
       font-size:1.0em;
@@ -199,8 +200,8 @@
 
       &:hover{
         background-size: 15em 12em;
-        }
-  }
+      }
+    }
 
     div:nth-child(3){
       padding-top:22%;
@@ -213,137 +214,140 @@
       &:hover{
         background-size: 28em 26em;
         background-position: -13em 0em;
-        }
-  }
-}
-
-//Side Arrow
-.skateSign{
-position: absolute;
-left: 4%;
-top: 98%;
-transition: hover 1s;
-
-&:hover{
-  left:5%;
-}
-
-div:nth-child(1){
-  background:#B4292E;
-  width:11em;
-  height:4.8em;
-  float:left;
-  color:white;
-  font-size:1.3em;
-  padding: 14% 0 0 10%;
-}
-
-div:nth-child(2){
-  width: 0;
-  height: 0;
-  border-top: 3.15em solid transparent;
-  border-bottom: 3.15em solid transparent;
-  border-left: 3em solid #B4292E;;
-  float:left;
-}
-}
-
-//Skateboard Selection
-.skateboards{
-
-  .skateboardTop{
-    @include span-columns(12);
-    width:6.1em;
-    transition: border 0.5, border-radius 0.5, padding 0.5s;
-    }
-
-  .skateboardBottom{
-    @include span-columns(12);
-    width:6.1em;
-    transition: border 0.5, border-radius 0.5, padding 0.5s;
-    }
-}
-
-//Footer
-
-.columnOne{
-  @include span-columns(6);
-  line-height: 119%;
-  padding-left:3%;
-  h5{
-    color:#828282;
-  }
-}
-
-.smallMedia{
-
-  div:nth-child(1){
-    width:3em;
-    height:3em;
-    padding-top:3%;
-
-    i{
-      font-size:2em;
+      }
     }
   }
 
-  div:nth-child(2){
-    width:3em;
-    height:3em;
-    padding-top:3%;
+  //Side Arrow
+  .skateSign{
+    position: absolute;
+    left: 4%;
+    top: 98%;
+    transition: hover 1s;
 
-    i{
-      font-size:2em;
+    &:hover{
+      left:5%;
+    }
+
+    div:nth-child(1){
+      background:#B4292E;
+      width:11em;
+      height:4.8em;
+      float:left;
+      color:white;
+      font-size:1.3em;
+      padding: 14% 0 0 10%;
+    }
+
+    div:nth-child(2){
+      width: 0;
+      height: 0;
+      border-top: 3.15em solid transparent;
+      border-bottom: 3.15em solid transparent;
+      border-left: 3em solid #B4292E;;
+      float:left;
     }
   }
 
-  div:nth-child(3){
-    width:3em;
-    height:3em;
-    padding-top:3%;
+  //Skateboard Selection
+  .skateboards{
 
-    i{
-      font-size:2em;
+    .skateboardTop{
+      @include span-columns(12);
+      width:6.1em;
+      transition: border 0.5, border-radius 0.5, padding 0.5s;
+    }
+
+    .skateboardBottom{
+      @include span-columns(12);
+      width:6.1em;
+      transition: border 0.5, border-radius 0.5, padding 0.5s;
     }
   }
 
-  div:nth-child(4){
-    width:3em;
-    height:3em;
-    padding-top:3%;
+  //Footer
 
-    i{
-      font-size:2em;
+  .columnOne{
+    @include span-columns(6);
+    line-height: 119%;
+    padding-left:3%;
+    h5{
+      color:#828282;
     }
   }
-}
 
-.columnTwo{
-  @include span-columns(6);
-  padding:1.5% 4% 0 0;
+  .smallMedia{
 
-  input:nth-child(1){
-    @include span-columns(12);
-    margin-bottom:2%;
-    border-top:3px solid #B2B2B2;
-    border-left:3px solid #B2B2B2;
+    div:nth-child(1){
+      width:3em;
+      height:3em;
+      padding-top:3%;
+
+      i{
+        font-size:2em;
+      }
+    }
+
+    div:nth-child(2){
+      width:3em;
+      height:3em;
+      padding-top:3%;
+
+      i{
+        font-size:2em;
+      }
+    }
+
+    div:nth-child(3){
+      width:3em;
+      height:3em;
+      padding-top:3%;
+
+      i{
+        font-size:2em;
+      }
+    }
+
+    div:nth-child(4){
+      width:3em;
+      height:3em;
+      padding-top:3%;
+
+      i{
+        font-size:2em;
+      }
+    }
   }
 
-  input:nth-child(2){
-    @include span-columns(12);
-    margin-bottom:2%;
-    border-top:3px solid #B2B2B2;
-    border-left:3px solid #B2B2B2;
+  .columnTwo{
+    @include span-columns(6);
+    padding:1.5% 4% 0 0;
+
+    input:nth-child(1){
+      @include span-columns(12);
+      margin-bottom:2%;
+      border-top:3px solid #B2B2B2;
+      border-left:3px solid #B2B2B2;
+    }
+
+    input:nth-child(2){
+      @include span-columns(12);
+      margin-bottom:2%;
+      border-top:3px solid #B2B2B2;
+      border-left:3px solid #B2B2B2;
+    }
+    textarea{
+      @include span-columns(12);
+    }
   }
-  textarea{
-    @include span-columns(12);
+
+  .skaterNav{
+    margin-top:5%;
   }
 
 }
 
-}
-
-@media (min-width:0px) and (max-width:580px){
+@media (min-width:1px) and (max-width:580px){
   .wrapper{
     @include outer-container(100%);
     padding:2% 0 2% 0;
@@ -360,14 +364,16 @@ div:nth-child(2){
 
     .dots{
       display:none;
-      }
+    }
 
     .mediaButtonArea{
       width:2em;
       height:2em;
-      @include span-columns(11);
+      @include span-columns(6);
+      @include shift(3.5);
 
       div{
+        float:none;
         height: 2.5em;
         width: 3em;
         margin-left:0.5em;
@@ -375,16 +381,17 @@ div:nth-child(2){
       }
 
       .facebook{
+        margin-top:4%;
         padding: 2% 0% 0 6%;
       }
 
       .rss{
+        margin-top:4%;
         padding: 2% 0% 0 5%;
       }
 
       .twitter{
         padding: 2% 0% 0 4%;
-
       }
 
       .youtube{
@@ -394,7 +401,7 @@ div:nth-child(2){
   }
 
   nav{
-    padding-top:25%;
+    margin-top:30%
   }
 
   button{
@@ -405,8 +412,6 @@ div:nth-child(2){
   }
 
   .headerMain{
-
-
     .headerPhoto{
       background-image: url(../images/top-image.png);
       height:100%;
@@ -415,7 +420,6 @@ div:nth-child(2){
       background-size: 100% 31em;
       background-position: 0em -1em;
     }
-
     .headerLogo{
       height: 10em;
       width: 15em;
@@ -431,41 +435,40 @@ div:nth-child(2){
 
 
   main{
-
     article{
 
-    section{
-      margin-top:4%;
-      @include span-columns(12);
+      section{
+        margin-top:4%;
+        @include span-columns(12);
 
-    h3{
-      @include span-columns(11);
-      @include shift(1);
-      font-size: 1.5em;
-      margin-bottom:1%;
-    }
-    h6{
-      @include span-columns(11);
-      @include shift(1);
-      font-size: 1.0em;
-      margin-top:1%;
-    }
+        h3{
+          @include span-columns(11);
+          @include shift(1);
+          font-size: 1.5em;
+          margin-bottom:1%;
+        }
+        h6{
+          @include span-columns(11);
+          @include shift(1);
+          font-size: 1.0em;
+          margin-top:1%;
+        }
 
-    h5{
-      @include span-columns(11);
-      @include shift(1);
-      font-size: 0.9em;
-    }
+        h5{
+          @include span-columns(11);
+          @include shift(1);
+          font-size: 0.9em;
+        }
 
-    h4{
-      @include span-columns(5);
-      @include shift(4);
-      margin-top:0.5%;
-      font-size: 1.1em;
+        h4{
+          @include span-columns(5);
+          @include shift(4);
+          margin-top:0.5%;
+          font-size: 1.1em;
+        }
       }
     }
   }
-}
 
   article section:nth-child(3){
     margin-right:0;
@@ -473,21 +476,21 @@ div:nth-child(2){
 
 
 
-//Skater profile section
+  //Skater profile section
 
   .skateProfile{
     @include span-columns(12);
 
-     div:nth-child(1){
-     font-size:0.7em;
-     background-size: 13em 13em;
-     background-position: 0em 0em;
-     transition:background-size 1.5s;
+    div:nth-child(1){
+      font-size:0.7em;
+      background-size: 13em 13em;
+      background-position: 0em 0em;
+      transition:background-size 1.5s;
 
-        &:hover{
-          background-size: 12em 12em;
-          }
-  }
+      &:hover{
+        background-size: 12em 12em;
+      }
+    }
 
     div:nth-child(2){
       font-size:0.7em;
@@ -497,8 +500,8 @@ div:nth-child(2){
 
       &:hover{
         background-size: 15em 12em;
-        }
-  }
+      }
+    }
 
     div:nth-child(3){
       padding-top:22%;
@@ -511,131 +514,291 @@ div:nth-child(2){
       &:hover{
         background-size: 31em 32em;
         background-position: -13em 0em;
-        }
+      }
+    }
   }
-}
 
-//Side Arrow
-.skateSign{
-position: absolute;
-left: 4%;
-top: 98%;
-transition: hover 1s;
+  //Side Arrow
+  .skateSign{
+    position: absolute;
+    left: 4%;
+    top: 98%;
+    transition: hover 1s;
 
-&:hover{
-  left:5%;
-}
+    &:hover{
+      left:5%;
+    }
 
-div:nth-child(1){
-  background:#B4292E;
-  width:11em;
-  height:4.8em;
-  float:left;
-  color:white;
-  font-size:1.3em;
-  padding: 14% 0 0 10%;
-}
+    div:nth-child(1){
+      background:#B4292E;
+      width:11em;
+      height:4.8em;
+      float:left;
+      color:white;
+      font-size:1.3em;
+      padding: 14% 0 0 10%;
+    }
 
-div:nth-child(2){
-  width: 0;
-  height: 0;
-  border-top: 3.15em solid transparent;
-  border-bottom: 3.15em solid transparent;
-  border-left: 3em solid #B4292E;;
-  float:left;
-}
-}
+    div:nth-child(2){
+      width: 0;
+      height: 0;
+      border-top: 3.15em solid transparent;
+      border-bottom: 3.15em solid transparent;
+      border-left: 3em solid #B4292E;;
+      float:left;
+    }
+  }
 
-//Skateboard Selection
-.skateboards{
+  //Skateboard Selection
+  .skateboards{
     padding-left:17%;
-  .skateboardTop{
-    @include span-columns(12);
-    width:9em;
-    transition: border 0.5, border-radius 0.5, padding 0.5s;
+    .skateboardTop{
+      @include span-columns(12);
+      width:9em;
+      transition: border 0.5, border-radius 0.5, padding 0.5s;
     }
 
-  .skateboardBottom{
-    @include span-columns(12);
-    width:9em;
-    transition: border 0.5, border-radius 0.5, padding 0.5s;
+    .skateboardBottom{
+      @include span-columns(12);
+      width:9em;
+      transition: border 0.5, border-radius 0.5, padding 0.5s;
     }
+  }
+
+  //Footer
+
+  .columnOne{
+    @include span-columns(6);
+    line-height: 119%;
+    padding-left:3%;
+    h5{
+      color:#828282;
+    }
+  }
+
+  .smallMedia{
+
+    div:nth-child(1){
+      width:3em;
+      height:3em;
+      padding-top:3%;
+
+      i{
+        font-size:2em;
+      }
+    }
+
+    div:nth-child(2){
+      width:3em;
+      height:3em;
+      padding-top:3%;
+
+      i{
+        font-size:2em;
+      }
+    }
+
+    div:nth-child(3){
+      width:3em;
+      height:3em;
+      padding-top:3%;
+
+      i{
+        font-size:2em;
+      }
+    }
+
+    div:nth-child(4){
+      width:3em;
+      height:3em;
+      padding-top:3%;
+
+      i{
+        font-size:2em;
+      }
+    }
+  }
+
+  .columnTwo{
+    @include span-columns(6);
+    padding:1.5% 4% 0 0;
+
+    input:nth-child(1){
+      @include span-columns(12);
+      margin-bottom:2%;
+      border-top:3px solid #B2B2B2;
+      border-left:3px solid #B2B2B2;
+    }
+
+    input:nth-child(2){
+      @include span-columns(12);
+      margin-bottom:2%;
+      border-top:3px solid #B2B2B2;
+      border-left:3px solid #B2B2B2;
+    }
+    textarea{
+      @include span-columns(12);
+    }
+
+  }
+
+  .skaterNav{
+    margin-top:5%;
+  }
 }
 
-//Footer
-
-.columnOne{
-  @include span-columns(6);
-  line-height: 119%;
-  padding-left:3%;
-  h5{
-    color:#828282;
-  }
-}
-
-.smallMedia{
-
-  div:nth-child(1){
-    width:3em;
-    height:3em;
-    padding-top:3%;
-
-    i{
-      font-size:2em;
+@media (min-width:1px) and (max-width:510px){
+  .mediaButtons{
+    .mediaButtonArea{
+      width:2em;
+      height:2em;
+      @include span-columns(8);
+      @include shift(3);
     }
   }
 
-  div:nth-child(2){
-    width:3em;
-    height:3em;
-    padding-top:3%;
-
-    i{
-      font-size:2em;
-    }
-  }
-
-  div:nth-child(3){
-    width:3em;
-    height:3em;
-    padding-top:3%;
-
-    i{
-      font-size:2em;
-    }
-  }
-
-  div:nth-child(4){
-    width:3em;
-    height:3em;
-    padding-top:3%;
-
-    i{
-      font-size:2em;
-    }
-  }
-}
-
-.columnTwo{
-  @include span-columns(6);
-  padding:1.5% 4% 0 0;
-
-  input:nth-child(1){
-    @include span-columns(12);
-    margin-bottom:2%;
-    border-top:3px solid #B2B2B2;
-    border-left:3px solid #B2B2B2;
-  }
-
-  input:nth-child(2){
-    @include span-columns(12);
-    margin-bottom:2%;
-    border-top:3px solid #B2B2B2;
-    border-left:3px solid #B2B2B2;
-  }
-  textarea{
-    @include span-columns(12);
+  nav{
+    margin-top:35%
   }
 
 }
+
+@media (min-width:1px) and (max-width:440px){
+  .mediaButtons{
+    .mediaButtonArea{
+      width:2em;
+      height:2em;
+      @include span-columns(10);
+      @include shift(1.8);
+    }
+  }
+
+  nav{
+    margin-top:45%
+  }
+
+  .headerMain{
+    .headerPhoto{
+      background-image: url(../images/top-image.png);
+      height:100%;
+      width:100%;
+      background-repeat: no-repeat;
+      background-size: 100% 31em;
+      background-position: 0em -1em;
+    }
+
+    //Nav Picture
+    .headerLogo{
+      height: 7em;
+      position:absolute;
+      width: 10em;
+      top:41em;
+      left: 1em;
+    }
+  }
+  //article and content
+  main{
+    article{
+
+      section{
+        margin-top:4%;
+        @include span-columns(12);
+
+        h3{
+          @include span-columns(11);
+          @include shift(1);
+          font-size: 1.5em;
+          margin-bottom:1%;
+        }
+        h6{
+          @include span-columns(11);
+          @include shift(1);
+          font-size: 0.8em;
+          margin-top:1%;
+        }
+
+        h5{
+          @include span-columns(11);
+          @include shift(1);
+          font-size: 0.9em;
+        }
+
+        h4{
+          @include span-columns(5);
+          @include shift(4);
+          margin-top:0.5%;
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+
+  //Skater Profiles
+  .skaterNav{
+    margin-top:5%;
+
+    .skateProfile{
+      @include span-columns(12);
+
+      div:nth-child(1){
+        @include span-columns(12);
+        font-size:0.7em;
+        height: 20.7em;
+        background-size: 41em 25em;
+        background-position: -8em -3em;
+        transition:background-position 1.5s;
+
+        &:hover{
+          background-position: -10em -3em;
+        }
+      }
+
+      div:nth-child(2){
+        @include span-columns(12);
+        font-size:0.7em;
+        height: 20.7em;
+        background-size: 39em 21em;
+        background-position: 0em 0em;
+        transition:background-size 1.5s;
+
+        &:hover{
+          background-size: 37em 21em;
+        }
+      }
+
+      div:nth-child(3){
+        @include span-columns(12);
+        padding-top:22%;
+        height: 20.7em;
+        font-size:0.7em;
+        background-size: 47em 31em;
+        background-position: -16em 0em;
+        transition:background-size 1.5s, background-position 1.5s;
+
+        &:hover{
+          background-size: 44em 31em;
+          background-position: -14em 0em;
+        }
+      }
+
+      div:nth-child(4){
+        @include span-columns(12);
+        padding-top:22%;
+        height: 20.7em;
+        font-size:0.7em;
+        background-size: 40em 20em;
+        background-position: 0em 0em;
+        transition:background-size 1.5s, background-position 1.5s;
+
+        &:hover{
+          background-size: 36em 20em;
+          background-position: 0em 0em;
+        }
+      }
+    }
+  }
+  //Skate Board Selection
+  .skateboards{
+    padding-left: 28%;
+  }
 }
