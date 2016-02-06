@@ -77,11 +77,11 @@ body::before {
       margin-left: 0.3em; }
     .mediaButtons .mediaButtonArea .facebook {
       background: #445897;
-      padding: 3% 0% 0 6%;
+      padding: 3% 0% 0 4.5%;
       box-shadow: 0 4px 0 rgba(128, 128, 128, 0.75); }
     .mediaButtons .mediaButtonArea .rss {
       background: #CC8F32;
-      padding: 3% 0% 0 5%;
+      padding: 3% 0% 0 4.5%;
       box-shadow: 0 4px 0 rgba(128, 128, 128, 0.75); }
     .mediaButtons .mediaButtonArea .twitter {
       background: #6A8DC7;
